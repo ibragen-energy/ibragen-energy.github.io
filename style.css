@@ -43,8 +43,10 @@
   
   .logo {
     display: flex;
-    flex-direction: column;
-  }
+    flex-direction: row; /* Fica um ao lado do outro. Quando column -> um em cima do outro (vertical)  */
+    align-items: center;  /* Alinha verticalmente */
+    gap: 12px;            /* Espaço entre a imagem e o texto */
+ }
   
   .logo i {
     color: var(--primary-blue);

@@ -25,9 +25,11 @@
   }
 
   .logo-img {
-    width: 60px;      /* Defina o tamanho desejado (exemplo: 60px) */
-    height: auto;     /* Mantém as proporções originais */
-    display: block;   /* Garante melhor alinhamento vertical */
+    width: 40px;        /* Teste com 36px, 40px, 48px, 60px... */
+    height: auto;
+    max-height: 40px;   /* Opcional: limita a altura máxima */
+    max-width: 100%;
+    display: block;
   }
 
   .logo-menu {

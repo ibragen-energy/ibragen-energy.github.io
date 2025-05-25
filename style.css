@@ -23,7 +23,13 @@
     background: #fff;
     box-shadow: 0 2px 8px rgba(34,60,80,0.1);
   }
-  
+
+  .logo-img {
+    width: 48px;     
+    height: auto;
+    margin-bottom: 4px;
+  }
+
   .logo-menu {
     max-width: 1200px;
     margin: 0 auto;

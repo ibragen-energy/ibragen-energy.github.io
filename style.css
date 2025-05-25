@@ -25,9 +25,9 @@
   }
 
   .logo-img {
-    width: 60px;      
+    width: 100px;      
     height: auto;
-    max-height: 60px;   /* Opcional: limita a altura máxima */
+    max-height: 100px;   /* Opcional: limita a altura máxima */
     max-width: 100%;
     display: block;
   }

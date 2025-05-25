@@ -1,0 +1,301 @@
+/* Estilos para o formulário de orçamento */
+
+.orcamento-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra de progresso */
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.progress-bar::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #e0e0e0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.progress-step {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #666;
+  position: relative;
+  z-index: 2;
+}
+
+.progress-step.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Formulário */
+.orcamento-form {
+  margin-top: 2rem;
+}
+
+.form-step {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="number"],
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group small {
+  display: block;
+  margin-top: 0.25rem;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+/* Grupos de radio e checkbox */
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.radio-group input,
+.checkbox-group input {
+  margin-right: 0.5rem;
+}
+
+/* Botões */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-success {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn-primary {
+  background-color: #1976D2;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1565C0;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #43A047;
+  transform: translateY(-2px);
+}
+
+/* Resultados */
+.results-step {
+  padding: 1rem;
+}
+
+.results-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.result-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.result-card h3 {
+  margin-top: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.result-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1976D2;
+  margin: 0.5rem 0;
+}
+
+.investment-summary {
+  background-color: #f1f8e9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.investment-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #43A047;
+  margin: 0.5rem 0;
+}
+
+.investment-discount {
+  color: #689F38;
+  font-weight: 500;
+}
+
+/* Tabela de projeção */
+.projection-table {
+  margin-bottom: 2rem;
+  overflow-x: auto;
+}
+
+.projection-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.projection-table th,
+.projection-table td {
+  padding: 0.75rem;
+  text-align: right;
+  border-bottom: 1px solid #eee;
+}
+
+.projection-table th {
+  background-color: #f5f5f5;
+  font-weight: 500;
+  text-align: center;
+}
+
+.projection-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Opções de financiamento */
+.financing-options {
+  margin-bottom: 2rem;
+}
+
+.financing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.financing-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.financing-card h4 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .orcamento-form-container {
+    padding: 1rem;
+  }
+  
+  .results-summary {
+    grid-template-columns: 1fr;
+  }
+  
+  .financing-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .btn-primary,
+  .btn-secondary,
+  .btn-success {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}

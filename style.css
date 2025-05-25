@@ -42,9 +42,8 @@
   }
   
   .logo {
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
   }
   
   .logo i {

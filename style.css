@@ -25,9 +25,9 @@
   }
 
   .logo-img {
-    width: 8px;     
-    height: auto;
-    margin-bottom: 4px;
+    width: 60px;      /* Defina o tamanho desejado (exemplo: 60px) */
+    height: auto;     /* Mantém as proporções originais */
+    display: block;   /* Garante melhor alinhamento vertical */
   }
 
   .logo-menu {

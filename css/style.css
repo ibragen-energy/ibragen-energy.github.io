@@ -90,7 +90,7 @@
   
   /* Hero Banner */
   .hero {
-    background: url('../src/images/imagem_banner.png') center/cover no-repeat;
+    background: url('../images/imagem_banner.png') center/cover no-repeat;
     min-height: 350px;
     display: flex;
     align-items: center;
@@ -102,7 +102,7 @@
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: visible; /* overflow: hidden; */
   }
 
   .hero::after {
